@@ -1,0 +1,310 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f3fdf3; /* Light greenish background for an earthy feel */
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #3b7d32; /* Dark green to symbolize plants and nature */
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  margin-right: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #e9f7e9; /* Light green for contrast */
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: #d4efdf; /* Lighter green for links */
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #b3ddb3; /* Change color on hover to a brighter green */
+}
+
+/* Hero Section */
+.hero {
+  background: url('../public/images/AI-agriculture-1024x576.jpg') no-repeat center center/cover;
+  background-color: #e0f7e0; /* Fallback color if image fails to load */
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(239, 251, 254);
+  text-align: left;
+  position: relative;
+  top: 40px; left: 40px;
+  border-bottom: 4px solid #3b7d32; /* Adds a plant-like border at the bottom */
+}
+
+.hero h1 {
+  font-size: 64px;
+  margin-bottom: 30px;
+  text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero button {
+  padding: 20px 40px;
+  background-color: #e0ffe0; /* Light green button */
+  color: #3b7d32;
+  border: 2px solid #3b7d32;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background-color: #3b7d32;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Categories Section */
+.categories {
+  background-color: #f0f7f0; /* Light plant-themed green background */
+  padding: 60px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  width: 30%;
+  background-color: white;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 12px;
+  border: 2px solid #a5d6a5; /* Soft green border */
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category-card h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #3b7d32;
+}
+
+.category-card button {
+  padding: 10px 20px;
+  background-color: #e0ffe0; /* Button with plant theme */
+  color: #3b7d32;
+  border: 2px solid #3b7d32;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-card button:hover {
+  background-color: #3b7d32;
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #3b7d32;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+footer a {
+  color: #e9f7e9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-card {
+    width: 85%;
+  }
+}
+/* Hero Section */
+.hero {
+  background: url('../public/images/AI-agriculture-1024x576.jpg') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px; /* Creates a gap below the hero section */
+}
+
+/* Categories Section */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px; /* Adds padding inside the categories section */
+}
+
+/* Category Cards */
+.category-card {
+  width: calc(22% - 20px); /* Adjusted width for margin */
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Creates space around each card */
+  transition: transform 0.3s;
+  overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.category-card img {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+  max-height: 150px; /* Limits height to avoid overflow */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Other existing styles remain unchanged */
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Inventory Section */
+.inventory {
+  padding: 80px 20px 20px; /* Adjust padding for header */
+  text-align: center;
+}
+
+.inventory h1 {
+  margin-bottom: 40px;
+  color: #4CAF50;
+}
+
+.inventory-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.inventory-card {
+  width: calc(22% - 20px); /* Width of the card */
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Margin around each card */
+  transition: transform 0.3s;
+}
+
+.inventory-card img {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px; /* Set maximum height */
+  object-fit: cover; /* Ensures the image covers the area */
+}
+
+.inventory-card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.inventory-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #4CAF50;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .inventory-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inventory-card {
+    width: 80%; /* Make cards full width on smaller screens */
+  }
+}

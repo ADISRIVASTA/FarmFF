@@ -1,22 +1,26 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./style.css";
-import ShopProducts from "./ShopProducts"; // Import the ShopProducts component
-
+import ShopProducts from "./ShopProducts";
+import CropRecommendation from "./CropRecommendation"; // Import the CropRecommendation component
+import DemandForecast from "./DemandForecast"; // Import the DemandForecast component
+import InventoryManagement from "./InventoryManagement";
+import PriceOptimization from "./PriceOptimization";
 function App() {
   return (
     <Router>
       <div>
         {/* Header */}
         <header>
-          <div className="logo">Agro E-Commerce</div>
+          <div className="logo">FarmFresh</div>
           <nav>
-            <a href="/home">Home</a>
+             <a href="/home">Home</a>
             <a href="/products">Shop Products</a>
-            <a href="/forecast">Demand Forecast</a>
+            <a href="/cpp">Crop Recommendation</a>
             <a href="/pricing">Price Optimization</a>
             <a href="/inventory">Inventory</a>
-            <a href="/contact">Contact Us</a>
+            <a href="/forecast">Demand Forecast</a>
+            
           </nav>
         </header>
 
@@ -64,6 +68,16 @@ function App() {
             }
           />
           <Route path="/products" element={<ShopProducts />} />
+          <Route path="/cpp" element={<CropRecommendation />} />
+          <Route path="/forecast" element={<DemandForecast />} />
+          <Route path="/inventory" element={<InventoryManagement />} />
+          <Route path="/pricing" element={<PriceOptimization />} />
+          {/* Placeholder Routes */}
+       
+          <Route
+            path="/inventory"
+            element={<h2>Inventory Management Feature Coming Soon!</h2>}
+          />
         </Routes>
 
         {/* Footer */}
